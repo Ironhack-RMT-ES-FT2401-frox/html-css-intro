@@ -1,0 +1,121 @@
+body {
+  background-color: rgb(180, 155, 123);
+  color: rgb(69, 69, 69);
+  /* .todos los elementos internos de body heredan el estilo de color */
+}
+
+h1 {
+  color: rgb(93, 1, 1);
+}
+
+/* efecto de cascada
+h1 {
+  color: blue;
+} */
+
+#title {
+  /* especificidad indica que estilos por diferentes formas tienen prioridad sobre otros */
+  color: blueviolet;
+}
+
+/* 
+especificar orden:
+1. Estilos en linea 
+2. Ids
+3. clases
+4. Etiquetas
+5. por atributos de etiquetas u otros
+*/
+
+h1 {
+  color: black;
+}
+
+
+/* display */
+#title {
+  display: block; /* valor predeterminado */
+  display: inline; /* ocupa el tamaño del contenidos */
+  display: none; /* sigue existiendo pero desaparece de la vista */
+  display: flex; /* Le da estructura de organización de flexbox */
+  display: grid; /* Le da estructura de organización de grid */
+}
+
+/* section {
+  background-color: brown;
+} */
+
+#movie-section {
+  background-color: lightblue;
+}
+
+#brand-section {
+  background-color: lightcoral;
+}
+
+#band-section {
+  background-color: lightgreen;
+}
+
+
+#movie-section, #brand-section, #band-section {
+  color: black;
+}
+
+/* selecciones anidadas */
+#movie-section li {
+  color: blue;
+}
+
+#brand-section li {
+  color: rgb(67, 0, 0);
+}
+
+#band-section li {
+  color: green
+}
+
+
+.section-subtitle {
+  text-decoration: underline;
+  box-shadow: -1px 8px 22px 24px #665AFF;
+}
+
+
+/* Modelo de caja */
+#movie-section, #brand-section, #band-section {
+  /* border-style: solid;
+  border-width: 5px;
+  border-color: brown; */
+
+  border: solid 5px brown;
+
+  /* margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px; */
+
+  margin: 50px;
+
+  padding-left: 50px;
+
+}
+
+#title {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  /* se puede importar fuentes externas. Recomendación a traves de google fonts */
+}
+
+
+/* implementar imagenes de fondo */
+
+body {
+  background-image: url("./images/bg.webp");
+  background-position: center;
+  background-size: cover;
+}
